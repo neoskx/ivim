@@ -2,3 +2,5 @@
 *.pyc
 *._*
 .vim/bundle
+.vim
+spf13-vim

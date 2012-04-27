@@ -1,1 +1,9 @@
-let g:spf13_bundle_groups=['general', 'programming', 'php', 'javascript', 'html']
+
+" Fast editing of the .vimrc.local
+map <leader>vl :e! ~/.vimrc.local<cr>
+
+" Fase editing of the .vimrc.bundles.local
+map <Leader>vb :e! ~/.vimrc.bundles.local<cr>
+
+" set help language to chinese
+set helplang=cn
