@@ -38,16 +38,16 @@ rm -rf $HOME/.vim
 rm -rf $HOME/.vimrc.bundles.local
 rm -rf $HOME/.vimrc.local
 
+echo "\n*  Cloning ivim...                                                    *\n"
+git clone --recursive https://github.com/blithexu/ivim $ivim_endpath
+ln -s $ivim_endpath/.vimrc.local $HOME/.vimrc.local                        #ivim's custom Settings
+ln -s $ivim_endpath/.vimrc.bundles.local $HOME/.vimrc.bundles.local        #ivim's custom Bundles
+
 # Backup old vim stuff
 echo "\n*  Backing up current vim stuff...                                    *\n"
 today=`date +%Y%m%d`
 mkdir -p $backup_endpath
 for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && mv $i $backup_endpath/$i.$today; done
-
-echo "\n*  Cloning ivim...                                                    *\n"
-git clone --recursive -b 1.0 https://github.com/blithexu/ivim $ivim_endpath
-ln -s $ivim_endpath/.vimrc.local $HOME/.vimrc.local                        #ivim's custom Settings
-ln -s $ivim_endpath/.vimrc.bundles.local $HOME/.vimrc.bundles.local        #ivim's custom Bundles
 
 echo "\n*  Cloning spf13-vim...                                               *\n"
 git clone --recursive -b 3.0 http://github.com/spf13/spf13-vim.git $spf13_vim_endpath
