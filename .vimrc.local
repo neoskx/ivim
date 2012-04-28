@@ -20,3 +20,8 @@ let g:syntastic_enable_signs=1 " whether to use the |:sign| interface to mark sy
 let g:syntastic_auto_loc_list=1 " set to 1 the error window will be automatically opened when errors are detected, and closed when none are detected
 let g:syntastic_loc_list_height = 5 " set the height of error window
 "}}}
+
+
+"{{{ Plugin - jsbeautify [https://github.com/einars/js-beautify]
+map <leader>ff :call g:Jsbeautify()<cr>
+"}}}
