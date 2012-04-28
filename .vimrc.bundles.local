@@ -1,2 +1,4 @@
 "chinese verion vim help
 Bundle 'ahao/vimcdoc'
+
+Bundle 'msanders/snipmate.vim'
