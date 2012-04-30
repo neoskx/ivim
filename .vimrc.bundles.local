@@ -2,3 +2,5 @@
 Bundle 'ahao/vimcdoc'
 
 Bundle 'einars/js-beautify'
+
+Bundle 'vim-scripts/renamer.vim'
