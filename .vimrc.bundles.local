@@ -1,6 +1,13 @@
+let g:spf13_bundle_groups=['general', 'programming','python', 'php', 'javascript', 'html', 'misc']
 "chinese verion vim help
 Bundle 'ahao/vimcdoc'
 
 Bundle 'einars/js-beautify'
 
 Bundle 'vim-scripts/renamer.vim'
+
+" this plugin can let user edit blog in vim and publish to wordpress"
+Bundle 'connermcd/VimRepress'
+
+" Markdown syntax highlight for Vim editor with snippets support [https://github.com/hallison/vim-markdown]"
+Bundle 'hallison/vim-markdown'
