@@ -1,13 +1,19 @@
-let g:spf13_bundle_groups=['general', 'programming','python', 'php', 'javascript', 'html', 'misc']
-"chinese verion vim help
-Bundle 'ahao/vimcdoc'
+" ++++++++++++++++++++++++++++++++++++++++++++++++++++
+" Add plugins, add I likes plugins
+" ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Bundle 'einars/js-beautify'
+" chinese verion vim help
+" if you like to read chinese version, you can uncommect, but you should know
+" it has the risk that it maybe not latest document
+" Bundle 'ahao/vimcdoc'
 
-Bundle 'vim-scripts/renamer.vim'
+" Provides easy code formatting in Vim by integrating existing code formatters
+" This plugin makes use of external formatprograms to achieve the best result
+" So you need to install [js-beautify](https://github.com/beautify-web/js-beautify) to get better result
+" [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
+Bundle 'Chiel92/vim-autoformat'
 
-" this plugin can let user edit blog in vim and publish to wordpress"
-Bundle 'connermcd/VimRepress'
-
-" Markdown syntax highlight for Vim editor with snippets support [https://github.com/hallison/vim-markdown]"
-Bundle 'hallison/vim-markdown'
+" emmet for vim. You can get more information about emmet from
+" [emmt](http://emmet.io)
+" [emmet-vim](https://github.com/mattn/emmet-vim)
+Bundle 'mattn/emmet-vim'
