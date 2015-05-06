@@ -32,7 +32,18 @@
 经过以上步骤就安装完成了，你可以打开的MacVim或者直接用vim来试用了。
 
 ### 常用快捷键
-
-* `Ctrl+e`, `,e`：显示file explorer - NERDTree
+* `<Leader>`: `,`
+* `Ctrl+e`, `<Leader>e`：显示file explorer - NERDTree
 * `Shift+H`, `Shift+L`：切换tab
+* `<Leader>cc`: 注释当前行或者在visual mode下选中的text
+* `<Leader>cm`: 块注释选中的行
+* `<Leader>cu`: 取消选中行的注释
+* 怎么样选中多行: 
+ 1. `Shift+v`进入Visual Mode
+ 2. 从当前行选起
+ 
+ 	* `<n>gg`: 到第n行。比如：当前行到第10行，那就是10G
+ 	* `<n>j`: 往下n行
+ 	* `<n>k`: 往上n行
+ 	* `<n>w`: 往右n行
 * 

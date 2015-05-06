@@ -1,19 +1,41 @@
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++
-" Add plugins, add I likes plugins
+" Add plugins
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+" Bundles {
+
+	" Web {
+			if count(g:spf13_bundle_groups, 'sk_web')
+				" emmet for vim. You can get more information about emmet from
+				" [emmt](http://emmet.io)
+				" [emmet-vim](https://github.com/mattn/emmet-vim)
+				Bundle 'mattn/emmet-vim'
+
+				" Provides easy code formatting in Vim by integrating existing code formatters
+				" This plugin makes use of external formatprograms to achieve the best result
+				" So you need to install [js-beautify](https://github.com/beautify-web/js-beautify) to get better result
+				" [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
+				Bundle 'Chiel92/vim-autoformat'
+			endif
+	" }
+
+
+	" Nodejs {
+			if count(g:spf13_bundle_groups, 'sk_nodejs')
+				" [vim-node](https://github.com/moll/vim-node)
+				Bundle 'moll/vim-node'
+				
+				" [snipmate-nodejs](https://github.com/jamescarr/snipmate-nodejs)
+				Bundle 'jamescarr/snipmate-nodejs'
+			endif
+	" }
+
+"}
+
+"------------------------------------------------------
+" Uncomment if you need
+"------------------------------------------------------
 " chinese verion vim help
 " if you like to read chinese version, you can uncommect, but you should know
 " it has the risk that it maybe not latest document
 " Bundle 'ahao/vimcdoc'
-
-" Provides easy code formatting in Vim by integrating existing code formatters
-" This plugin makes use of external formatprograms to achieve the best result
-" So you need to install [js-beautify](https://github.com/beautify-web/js-beautify) to get better result
-" [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
-Bundle 'Chiel92/vim-autoformat'
-
-" emmet for vim. You can get more information about emmet from
-" [emmt](http://emmet.io)
-" [emmet-vim](https://github.com/mattn/emmet-vim)
-Bundle 'mattn/emmet-vim'
