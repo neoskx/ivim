@@ -1,0 +1,14 @@
+" Fix an issue, in edit mode cannot use arrow key.
+" http://vim.wikia.com/wiki/Fix_arrow_keys_that_display_A_B_C_D_on_remote_shell
+set nocompatible
+
+imap <ESC>oA <ESC>ki
+imap <ESC>oB <ESC>ji
+imap <ESC>oC <ESC>li
+imap <ESC>oD <ESC>hi
+
+" Change Color Theme to solarized-dark
+" https://github.com/altercation/vim-colors-solarized
+syntax enable
+set background=dark
+colorscheme solarized
